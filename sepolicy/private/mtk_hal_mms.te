@@ -2,3 +2,13 @@ type mtk_hal_mms, domain;
 type mtk_hal_mms_exec, exec_type, file_type, vendor_file_type;
 
 allow mtk_hal_mms untrusted_app_29:fd { use };
+
+type mtk_hal_mms, domain;
+type mtk_hal_mms_hwservice, hwservice_manager_type;
+
+# Allow untrusted_app_29 to add and find mtk_hal_mms_hwservice
+add_hwservice(untrusted_app_29, mtk_hal_mms_hwservice)
+
+# Allow binder calls from untrusted_app_29 to mtk_hal_mms and vice versa
+binder_call(untrusted_app_29, mtk_hal_mms)
+binder_call(mtk_hal_mms, untrusted_app_29)
