@@ -152,3 +152,8 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     CustomDoze
+
+# Misc
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.controls.xml:system/etc/permissions/android.software.controls.xml
+
