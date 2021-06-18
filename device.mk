@@ -44,9 +44,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service \
-    GoogleCameraGo
-
+    android.hardware.bluetooth.a2dp@1.0-service 
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml \
@@ -149,6 +147,10 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     CustomDoze
+
+# Google-Camera GO
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
 
 # Misc
 PRODUCT_COPY_FILES += \
