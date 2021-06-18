@@ -26,7 +26,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Sakura flags
 SAKURA_OFFICIAL := true
-SAKURA_MAINTAINER := Tanmay(@tlas01)
+SAKURA_MAINTAINER := Tanmay&Sharan
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2001
