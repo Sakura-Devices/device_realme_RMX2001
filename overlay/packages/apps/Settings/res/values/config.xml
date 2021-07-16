@@ -29,5 +29,9 @@
 
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+
+    <!-- Battery Health Nodes -->
+    <string name="config_batCurCap" translatable="false">/sys/class/power_supply/battery/charge_counter</string>
+    <string name="config_batDesCap" translatable="false">/sys/class/power_supply/battery/charge_full</string>
  
 </resources>
