@@ -75,7 +75,22 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # ADB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
-	
+
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram= false \
+    ro.lmk.use_psi= true \
+    ro.lmk.use_minfree_levels= false \
+    ro.lmk.low= 1001 \
+    ro.lmk.medium= 800 \
+    ro.lmk.critical= 0 \
+    ro.lmk.critical_upgrade= true \
+    ro.lmk.upgrade_pressure= 100 \
+    ro.lmk.downgrade_pressure=100 \
+    ro.lmk.kill_heaviest_task= true \
+    ro.lmk.kill_timeout_ms= 0 \
+    ro.lmk.debug= false
+
 # Tweak the memory management of the device, enable more background apps.. etc..
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.fha_enable=true \
