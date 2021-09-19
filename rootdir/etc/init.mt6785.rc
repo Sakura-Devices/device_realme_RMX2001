@@ -97,6 +97,9 @@ service debug_roottree /system/bin/sh -c "ls -la / > /data/debug.roottree.txt"
     oneshot
 
 on boot
+
+	stop console
+
     # Set permission for Goodix FP
     chown system system /dev/goodix_fp
 
