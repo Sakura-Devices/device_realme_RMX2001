@@ -164,9 +164,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomDoze
 
-# Google-Camera GO
+# Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    GoogleCameraGo \
+    Gboard
 
 # Misc
 PRODUCT_COPY_FILES += \
