@@ -29,6 +29,7 @@ SAKURA_OFFICIAL := true
 SAKURA_MAINTAINER := Sharan
 SAKURA_BUILD_TYPE=coregapps
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2001
